@@ -6,7 +6,7 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-        StackArray<Integer> stack = new StackArray<Integer>();
+        StackList<Integer> stack = new StackList<Integer>();
         Random rand = new Random();
 
         for (int i = 0; i < 100; i++) {
