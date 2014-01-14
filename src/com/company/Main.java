@@ -12,7 +12,7 @@ public class Main {
         for (int i = 0; i < 100; i++) {
             int k = rand.nextInt();
             stack.push(k);
-            System.out.print("el " + i + " : "+k+" / ");
+            System.out.print("el " + i + " : " + k + " / ");
         }
         System.out.println("************* Stack after added 100 elements ****************");
         for (Integer out : stack)

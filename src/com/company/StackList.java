@@ -25,7 +25,7 @@ public class StackList<Item> implements Iterable<Item> {
         return first == null;
     }
 
-    public int getSize(){
+    public int getSize() {
         return size;
     }
 
@@ -38,6 +38,7 @@ public class StackList<Item> implements Iterable<Item> {
         first.nodeNext = oldFirst;
         size++;
     }
+
     public void push(Item[] item) {
         if (item == null)
             throw new java.lang.NullPointerException("Item == NULL ");
@@ -49,7 +50,7 @@ public class StackList<Item> implements Iterable<Item> {
         if (isEmpty())
             throw new java.util.NoSuchElementException("Not elements in Stack");
         Item item = (Item) first.item;
-        first=first.nodeNext;
+        first = first.nodeNext;
         size--;
         return item;
     }
